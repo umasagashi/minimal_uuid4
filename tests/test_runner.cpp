@@ -92,9 +92,9 @@ REPEAT_TEST(test_str_variant, { test_chars_used(gen.uuid4().str()[16 + 3], varia
         } \
     }
 
-DUPLICATION_TEST(test_hed_duplication, [](auto &gen) { return gen.uuid4().hex(); })
+DUPLICATION_TEST(test_hed_duplication, [](Generator &gen) { return gen.uuid4().hex(); })
 
-DUPLICATION_TEST(test_str_duplication, [](auto &gen) { return gen.uuid4().str(); })
+DUPLICATION_TEST(test_str_duplication, [](Generator &gen) { return gen.uuid4().str(); })
 
 #define TEST_FUNC(func) \
     { \
