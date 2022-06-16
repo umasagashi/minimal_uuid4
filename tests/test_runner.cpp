@@ -25,7 +25,7 @@ std::set<char> hex_chars() {
 }
 
 std::set<char> variant_chars() {
-    const std::string t = "89ab";
+    const std::string t = "8";
     return {t.begin(), t.end()};
 }
 
